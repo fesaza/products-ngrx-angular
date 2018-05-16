@@ -1,3 +1,6 @@
-<div *ngFor='let customer of customers$ | async'>
-  {{customer.name}}
-</div>
+<mat-card class="customer" *ngFor='let customer of customers$ | async'>
+  <mat-card-header>
+  <mat-card-title>{{customer.name}}</mat-card-title>
+  <mat-card-subtitle>{{customer.lastName}}</mat-card-subtitle>
+</mat-card-header>
+</mat-card>
