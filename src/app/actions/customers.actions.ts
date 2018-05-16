@@ -13,4 +13,10 @@ export class LoadCustomersSuccessAction{
  constructor(public data: Customer[]){ }
 }
 
+// export class LoadFail implements Action {
+//  readonly type = CollectionActionTypes.LoadFail;
+
+//  constructor(public payload: any) {}
+// }
+
 export type Action = LoadCustomersAction | LoadCustomersSuccessAction
