@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { CustomersModule } from 'src/app/customers/customers.module';
 import { CommonComponentsModule } from 'src/app/common-components/common-components.module';
 import { LayoutModule } from '@angular/cdk/layout';
+import { StateModule } from 'src/app/state/state.module';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { LayoutModule } from '@angular/cdk/layout';
     LayoutModule,
     CommonComponentsModule,
     CustomersModule,
+    StateModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,18 @@
+{
+ "products": [
+   { "id": 1, "name": "1 product", "description": "some description 1" },
+   { "id": 2, "name": "2 product", "description": "some description 2" },
+   { "id": 3, "name": "3 product", "description": "some description 3" },
+   { "id": 4, "name": "4 product", "description": "some description 4" },
+   { "id": 5, "name": "5 product", "description": "some description 5" },
+   { "id": 5, "name": "6 product", "description": "some description 6" },
+   { "id": 6, "name": "7 product", "description": "some description 7" },
+   { "id": 7, "name": "8 product", "description": "some description 8" }
+ ],
+ "customers": [
+   { "id": 1, "name": "felipe", "lastName": "zarama" },
+   { "id": 2, "name": "jhon", "lastName": "doe" },
+   { "id": 3, "name": "karen", "lastName": "espitia" }
+ ],
+ "profile": { "name": "typicode" }
+}

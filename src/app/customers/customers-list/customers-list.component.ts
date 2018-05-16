@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Store } from '@ngrx/store';
+import { AppState } from 'src/app/state/app-state';
+import { Customer } from 'src/app/models/Customer';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-customers-list',
@@ -6,10 +10,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./customers-list.component.css']
 })
 export class CustomersListComponent implements OnInit {
+  customers$: Observable<any>;
 
-  constructor() { }
+  constructor(public store: Store<AppState>) { 
+    this.customers$ = store.select(state => state.customers);
+  }
 
   ngOnInit() {
+    
   }
 
 }
