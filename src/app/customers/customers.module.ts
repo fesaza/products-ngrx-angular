@@ -6,6 +6,7 @@ import { CustomersListComponent } from './customers-list/customers-list.componen
   imports: [
     CommonModule
   ],
+  exports: [CustomersListComponent],
   declarations: [CustomersListComponent]
 })
 export class CustomersModule { }

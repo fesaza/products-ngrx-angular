@@ -6,16 +6,18 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { CustomersModule } from 'src/app/customers/customers.module';
 import { CommonComponentsModule } from 'src/app/common-components/common-components.module';
+import { LayoutModule } from '@angular/cdk/layout';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    LayoutModule,
     CommonComponentsModule,
-    CustomersModule
+    CustomersModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
